@@ -14,8 +14,8 @@ API_MODE = {"post": requests.post, "get": requests.get}
 def send_request(
     mode: str,
     url: str,
-    data: dict = {},
-    json: dict = {},
+    data: dict = None,
+    json: dict = None,
     token: str = "",
 ):
 

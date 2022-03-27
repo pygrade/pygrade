@@ -21,5 +21,5 @@ url = "/task"
 mode = "post"
 
 [attempt]
-url = "/attempt"
+url = "/attempt/"
 mode = "post"
