@@ -1,3 +1,11 @@
-install:
+create-venv:
 	python3 -m venv .venv
-	.venv/bin/pip install setuptools wheel pep517 bump2version
+
+install-libraries: .venv
+	./.venv/bin/pip install setuptools wheel build bump2version
+
+build:
+	./.venv/bin/python -m build .
+
+clean:
+	rm -rf build dist pygradus.egg-info
