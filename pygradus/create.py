@@ -1,6 +1,6 @@
 from getpass import getpass
 from config import settings as st
-from api import send_request
+from pygradus.api import send_request
 
 
 def create_exercise(username, config, url=st.BASE_URL):

@@ -1,6 +1,6 @@
 import requests
 from copy import deepcopy
-from config import settings as st
+from pygradus.config import settings as st
 
 
 HEADERS = {

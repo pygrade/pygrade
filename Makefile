@@ -4,6 +4,9 @@ create-venv:
 install-libraries: .venv
 	./.venv/bin/pip install setuptools wheel build bump2version twine
 
+bump-minor:
+	bump2version minor setup.cfg
+
 build:
 	./.venv/bin/python -m build .
 
