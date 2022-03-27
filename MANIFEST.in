@@ -1,2 +1,2 @@
 include pyproject.toml
-recursive-include eccd_datasets *.toml
+include pygradus/settings.toml
