@@ -1,2 +1,5 @@
 # pygrade
-A library to interact with pygrade backend
+
+A python library to interact with Gradus backend. An automatic grading system for python.
+
+
