@@ -5,7 +5,6 @@ from pygradus.config import settings as st
 
 HEADERS = {
     "accept": "application/json",
-    "Content-Type": "application/x-www-form-urlencoded",
 }
 
 API_MODE = {"post": requests.post, "get": requests.get}
@@ -20,12 +19,16 @@ def send_request(
 ):
 
     header = deepcopy(HEADERS)
+    header["Content-Type"] = st[mode]["content-type"]
     if token:
         header["Authorization"] = token
 
     if url is None:
         url = st.BASE_URL
     url += st[mode]["url"]
+    print(url)
+    print(header)
+    print(data)
 
     func = API_MODE[st[mode]["mode"]]
 
