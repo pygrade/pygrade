@@ -26,9 +26,6 @@ def send_request(
     if url is None:
         url = st.BASE_URL
     url += st[mode]["url"]
-    print(url)
-    print(header)
-    print(data)
 
     func = API_MODE[st[mode]["mode"]]
 

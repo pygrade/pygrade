@@ -75,6 +75,7 @@ def create_exercise(username, config, url=st.BASE_URL):
     r = send_request("users", url, token=token)
     if r.status_code == 200:
         user_data = r.json()
+        print("Exercise correctly updated")
     else:
         return r.text
 
