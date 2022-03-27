@@ -1,5 +1,5 @@
 from pygradus.api import send_request
-from config import settings as st
+from pygradus.config import settings as st
 
 
 def check_solution(proposal, url=st.BASE_URL):

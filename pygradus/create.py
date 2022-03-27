@@ -1,5 +1,5 @@
 from getpass import getpass
-from config import settings as st
+from pygradus.config import settings as st
 from pygradus.api import send_request
 
 

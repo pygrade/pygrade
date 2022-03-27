@@ -7,6 +7,9 @@ install-libraries: .venv
 bump-minor:
 	bump2version minor setup.cfg
 
+bump-patch:
+	bump2version patch setup.cfg
+
 build:
 	./.venv/bin/python -m build .
 
