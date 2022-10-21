@@ -1,4 +1,4 @@
-BASE_URL = "http://gradus.kiedanski.com"
+BASE_URL = "http://pygradus.kiedanski.com"
 
 START_RE = "#sss"
 END_RE = "#eee"
