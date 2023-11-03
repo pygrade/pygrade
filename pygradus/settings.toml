@@ -1,4 +1,4 @@
-BASE_URL = "https://api.pygradus.info"
+BASE_URL = "https://api.pygradus.info:8000"
 
 START_RE = "#sss"
 END_RE = "#eee"
